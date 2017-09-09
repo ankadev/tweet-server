@@ -1,0 +1,25 @@
+/**
+Setup language options. Make use of the latest language enhancements.
+Basically, babel takes all the code and makes it look what node needs.
+*/
+
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "6.10"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "transform-object-rest-spread",
+      {
+        "useBuiltIns": true
+      }
+    ]
+  ]
+}
